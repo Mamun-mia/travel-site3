@@ -1,0 +1,33 @@
+.features-item{
+    padding-bottom:2.5rem;
+	
+	position:relative;
+
+
+	 @include breakpoint(sm) {
+   padding-left:94px;
+  }
+	&__icon{
+    display:block;
+    margin:0 auto;
+
+	@include breakpoint(sm) {
+   	position:absolute;
+	left:0;
+  }
+
+
+	}
+	&__title{font-size:1.6rem;
+     font-weight:300;
+     margin_top:.7em;
+     margin-bottom:.8rem;
+     text-align:center;
+
+     @include breakpoint(sm) {
+     font-size:1.875rem;
+     margin-top:1em;
+     text-align:left;
+  }
+	}
+}
