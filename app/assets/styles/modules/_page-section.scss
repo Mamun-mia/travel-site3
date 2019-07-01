@@ -2,5 +2,29 @@
 @include breakpoint(sm) {
     padding:4.5rem 0;
   }
+
+  &--no-b-paddin-untill-medium{
+  padding-bottom:0;
+   @include breakpoint(sm) {
+   padding-bottom:4.5rem
+   }
+  }
+
+
+  &--no-b-paddin-untill-large{
+  padding-bottom:0;
+   @include breakpoint(md) {
+   padding-bottom:4.5rem
+   }
+  }
+
 &--blue{background-color: $mainBlue;color:#FFF}
+
+&--testimonials{
+background-color:#e0e6ef;
+
+@include breakpoint(sm) {
+background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;background-size:cover}	
+}
+
 }
