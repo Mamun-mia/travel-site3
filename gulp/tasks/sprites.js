@@ -7,7 +7,7 @@ var config = {
 		css: {
 			render: {
 				css: {
-					template: './gulp/template/sprite.css'
+					template: './gulp/template/sprite.scss'
 				}
 			}
 
@@ -22,7 +22,7 @@ gulp.task('createSprite', function() {
 });
 
 gulp.task('copySpriteCSS', function() {
-	return gulp.src('./app/temp/sprite/css/*.css')
+	return gulp.src('./app/temp/sprite/css/*.scss')
 	 .pipe(rename('_sprite.css'))
 	 .pipe(gulp.dest('./app/assets/styles/modules'));
 });

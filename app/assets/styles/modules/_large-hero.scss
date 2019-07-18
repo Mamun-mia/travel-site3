@@ -1,6 +1,11 @@
 .large-hero{position: relative;border-bottom:10px solid $mainBlue;
 &__image{display:block}
-&__text-content{top:50%;left:0;text-align:center;position:absolute;width:100%;transform:translateY(-50%)}
+&__text-content{padding-top:60px;top:50%;left:0;text-align:center;
+position:absolute;width:100%;transform:translateY(-50%);
+@include breakpoint(sm)
+padding-top:88px;
+
+}
 &__title{font-weight:300;
 
 color:$mainBlue;font-size:1.1rem;margin:0;
@@ -18,8 +23,8 @@ color:$mainBlue;font-size:1.1rem;margin:0;
 }
 &__subtitle{font-weight:300;
 color:$mainBlue;font-size:1rem;margin:0;
-@include breakpoint(xs) {
-    font-size:1.2rem;
+@include breakpoint(sm) {
+    font-size:2.5rem;
   }
 }
 &__description{color:#FFF;font-size:1.1rem;font-weight:100;
@@ -28,7 +33,7 @@ max-width:30rem;
 margin-left:auto;
 margin-right:auto;
 @include breakpoint(xs) {
-    font-size:1.875rem;
+    font-size:1rem;
   }
   @include breakpoint(sm) {
     font-size:1.5rem;

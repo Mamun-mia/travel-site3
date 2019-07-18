@@ -19,7 +19,16 @@ gulp.task('watch', function() {
 	});
 });
 
+
+watch('./app/assets/scripts/**/*.js', function() {
+	gulp.start('scriptsRefresh');
+})
+
 gulp.task('cssInject',['styleSass'], function() {
 	return gulp.src('./app/assets/styles/temp/css/styles.css')
 	 .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'],  function() {
+	browserSync.reload();
 });
