@@ -10,7 +10,17 @@
 	strong{
 	font-weight:500;
 	}
-    &--blue{color:$mainBlue}
+    &--blue{
+    color:$mainBlue;
+    margin-top:0
+
+    }
+
+    &--less-margin{
+    margin-bottom:1.1rem
+    }
+
+
 	&__icon{
 	display:block;
 	margin-right:auto;
